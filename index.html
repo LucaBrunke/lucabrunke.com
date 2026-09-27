@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luca Brunke · moved to lucabrunke.eu</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://lucabrunke.eu/">
+<script>
+  // Map old lucabrunke.com (WordPress) addresses to the matching page on lucabrunke.eu.
+  (function () {
+    var p = location.pathname.toLowerCase();
+    var target = '/';
+    if (/contact|kontakt/.test(p)) target = '/contact.html';
+    else if (/impressum|imprint/.test(p)) target = '/imprint.html';
+    else if (/datenschutz|privacy/.test(p)) target = '/privacy.html';
+    else if (/about|research|publication|cv/.test(p)) target = '/research.html';
+    else if (/blog|project|categor|tag\/|survey|photogrammetry|fogou|castle|coaster|masking|heritage|passage|3d/.test(p)) target = '/projects.html';
+    location.replace('https://lucabrunke.eu' + target);
+  })();
+</script>
+<meta http-equiv="refresh" content="1; url=https://lucabrunke.eu/">
+<style>
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: system-ui, sans-serif; color: #1a1a1a; background: #fff; }
+  a { color: #23528a; }
+</style>
+</head>
+<body>
+  <p>This site has moved to <a href="https://lucabrunke.eu/">lucabrunke.eu</a>.</p>
+</body>
+</html>
